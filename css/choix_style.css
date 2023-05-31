@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDEDED;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'futura';
+}
+
+header {
+    background: #EDEDED;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;  
+}
+
+.menu {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 100%;
+    
+}
+
+.logo {
+    width: 60px;
+    float: left;
+    padding: 5px;
+    margin-left: 75px
+    
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 25px 0px;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #B2B2B2;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #B2B2B2;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.contenedor{
+    
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    margin-top: 55px;
+    margin-left: 75px;
+    margin-right: 75px;
+    
+}
+
+.imagenes{
+    margin-right: 75px;
+    width: 100%;
+    min-width: 100px;
+    
+}
+
+.imagen1{
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+
+.texto {
+    margin-top: 20px;
+    margin-right: 50px;
+    font-family: 'avenir next';
+}
+
+.pie-pagina{
+    width: 100%;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    padding: 25px 75px;
+        
+}
+.isaacmartinez{
+    float: left;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    float: right;
+    
+} 
+
+.linkedin{
+    margin-left: 10px
+}
